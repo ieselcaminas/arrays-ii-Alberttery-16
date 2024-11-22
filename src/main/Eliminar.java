@@ -16,12 +16,12 @@ public class Eliminar {
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
         int [] cadena={1,2,3,4,5};
-        System.out.println("Dime quin lloc vols eliminar");
-        int posicio=sc.nextInt()-1;
-        if(posicio> cadena.length){
-            System.out.println("El numero es mes gran que la llista torna a mirar-ho");
+        System.out.println("Dime que posicion quieres eliminar:");
+        int posicion=sc.nextInt()-1;
+        if(posicion> cadena.length){
+            System.out.println("Esta posición no existe en la lista.");
         }else{
-            System.out.println(Arrays.toString(eliminar(cadena,posicio)));
+            System.out.println(Arrays.toString(eliminar(cadena,posicion)));
         }
     }
 }
